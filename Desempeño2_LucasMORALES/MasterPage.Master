@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="Desempeño2_LucasMORALES.SiteMaster" %>
+
+
+<!-- "C:\Users\lucas\OneDrive\ORIGEN\Escritorio\LP3 DESEMPEÑO2 LUCAS MORALES\Desempeño2_LucasMORALES\Desempeño2_LucasMORALES\imagenes\logo 1.png"
+    "C:\Users\lucas\OneDrive\ORIGEN\Escritorio\LP3 DESEMPEÑO2 LUCAS MORALES\Desempeño2_LucasMORALES\Desempeño2_LucasMORALES\imagenes\logo 2.png"
+    "C:\Users\lucas\OneDrive\ORIGEN\Escritorio\LP3 DESEMPEÑO2 LUCAS MORALES\Desempeño2_LucasMORALES\Desempeño2_LucasMORALES\imagenes\logo 3.png"-->
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asesoría Legal Global</title>
+    <link href="~/css/estilos.css" rel="stylesheet" type="text/css" runat="server" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+<header class="navbar">
+    <a href="Default.aspx" class="navbar-brand">
+        <img src="\imagenes\logo 2.png" alt="Logo Asesoría Legal Global" />
+        <div>
+            <span class="navbar-title">ASESORÍA LEGAL GLOBAL</span>
+            <span class="navbar-subtitle">CONSULTORÍA JURÍDICA &amp; GESTIÓN DOCUMENTAL</span>
+        </div>
+    </a>
+    <ul class="navbar-links">
+        <li><a href="Default.aspx">-->VOLVER AL MENÚ<--</a></li>
+        <li><a href="Registro.aspx">-->ACCESO REGISTRO DE CLIENTES<--</a></li>
+        <li><a href="GestionDocumentos.aspx">-->ACCESO GESTIÓN DE DOCUMENTOS<--</a></li>
+        <li><asp:LinkButton ID="btnCerrarSesion" runat="server" OnClick="btnCerrarSesion_Click" CausesValidation="false" style="color: #f2b632;">-->BORRAR DATOS DE SESIÓN<--</asp:LinkButton></li>
+    </ul>
+</header>
+
+             <main class="main-content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <img src="\imagenes\logo 3.png" alt="Banner Institucional Asesoría Legal" />
+        <p>&copy; 2026 ASESORÍA LEGAL GLOBAL - DERECHOS RESERVADOS | DESEMPEÑO DE LUCAS MORALES</p>
+    </div>
+</footer>
+        </div>
+    </form>
+</body>
+</html>
